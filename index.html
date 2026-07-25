@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Frank Lopez - Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="nav-logo">franklopez<span class="nav-logo-accent">.dev</span></div>
+    <div class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <!-- Background -->
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-particle hero-particle-1"></div>
+    <div class="hero-particle hero-particle-2"></div>
+    <div class="hero-particle hero-particle-3"></div>
+
+    <div class="hero-inner">
+      <div class="hero-tag"><span class="hero-tag-dollar">$</span> whoami</div>
+      <h1 class="hero-title">Frank Lopez</h1>
+      <p class="hero-desc">
+        Aspiring developer who loves math — building systems from the data structures up.
+        Currently deep in trees, heaps, and hash tables, chasing better Big-O.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#resume" class="btn-secondary">Download Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT / STRIP -->
+  <div class="about-strip reveal">
+    <div class="about-inner">
+      <div>
+        <div class="about-label">Status</div>
+        <div class="about-value">Undergrad · Seeking Internships</div>
+      </div>
+      <div>
+        <div class="about-label">Focus</div>
+        <div class="about-value">Advanced data structures &amp; Algorithms</div>
+      </div>
+      <div>
+        <div class="about-label">Strengths</div>
+        <div class="about-value">Problem solving · Fast Learning</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="section">
+    <div class="section-tag">02 — Projects</div>
+    <h2 class="section-title">School projects, built to scale</h2>
+    <p class="section-desc">Coursework projects centered on implementing and reasoning about advanced data structures.</p>
+
+    <!-- Project 1 -->
+    <div class="project-card reveal">
+      <div class="project-header">
+        <h3 class="project-title">Ship Fleet Management System</h3>
+        <div class="project-badges">
+          <span class="badge-metric">O(log n) ops</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Fleet-management system built on binary search trees, supporting BST, AVL, and splay tree variants under a shared interface.
+        Implements insertion/removal, height tracking, rotations, rebalancing logic, and adaptive self-adjusting behavior for splay trees.
+      </p>
+      <div class="project-tags">
+        <span class="tag">BST</span>
+        <span class="tag">AVL Tree</span>
+        <span class="tag">Splay Tree</span>
+        <span class="tag">C++</span>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card project-card--purple reveal">
+      <div class="project-header">
+        <h3 class="project-title">Social Media Feed Algorithm</h3>
+        <div class="project-badges">
+          <span class="badge-metric badge-metric--purple">O(log n) merge</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Mergeable priority queue for ranking feed content, implemented with both leftist heaps and skew heaps.
+        Supports custom max/min priority functions and runtime switching between the two heap structures to compare merge performance.
+      </p>
+      <div class="project-tags">
+        <span class="tag tag--purple">Leftist Heap</span>
+        <span class="tag tag--purple">Skew Heap</span>
+        <span class="tag tag--purple">Priority Queue</span>
+        <span class="tag tag--purple">Java</span>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="project-card project-card--amber reveal">
+      <div class="project-header">
+        <h3 class="project-title">DNA Sequence Database</h3>
+        <div class="project-badges">
+          <span class="badge-metric badge-metric--amber">O(1) avg lookup</span>
+        </div>
+      </div>
+      <p class="project-desc">
+        Open-addressing hash table for storing DNA sequences, supporting linear probing, quadratic probing, and double hashing.
+        Adds lazy deletion to keep probe chains intact and incremental rehashing to resize without a full-table stop-the-world rebuild.
+      </p>
+      <div class="project-tags">
+        <span class="tag tag--amber">Hash Table</span>
+        <span class="tag tag--amber">Open Addressing</span>
+        <span class="tag tag--amber">Rehashing</span>
+        <span class="tag tag--amber">Python</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div id="skills" class="section">
+    <div class="section-tag">03 — Skills</div>
+    <h2 class="section-title section-title--tight">What I work with</h2>
+    <div class="skills-grid reveal">
+      <div class="skill-card">
+        <div class="skill-label">Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-card skill-card--purple">
+        <div class="skill-label skill-label--purple">Tools &amp; Web</div>
+        <div class="skill-tags">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">Vite</span>
+        </div>
+      </div>
+      <div class="skill-card skill-card--amber">
+        <div class="skill-label skill-label--amber">Strengths</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Problem Solving</span>
+          <span class="skill-tag">Fast Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div id="education" class="section">
+    <div class="section-tag">04 — Education</div>
+    <h2 class="section-title section-title--tight">Education</h2>
+    <div class="education-card education-card--primary reveal">
+      <div>
+        <div class="education-title">B.S. in Computer Science, Minor in Mathematics</div>
+        <div class="education-sub">University of Maryland, Baltimore County · Expected 2028</div>
+      </div>
+      <div class="education-note">Relevant coursework: Data Structures &amp; Algorithms, Discrete Math, Systems</div>
+    </div>
+    <div class="education-card">
+      <div>
+        <div class="education-title">Certificate in Korean</div>
+        <div class="education-sub">University of Maryland, Baltimore County · Expected 2028</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT / RESUME -->
+  <div id="contact" class="contact-section">
+    <div id="resume" class="contact-inner reveal">
+      <div class="section-tag">05 — Contact</div>
+      <h2 class="contact-title">Let's talk</h2>
+      <p class="contact-desc">Open to internships. Reach out or grab a copy of my resume.</p>
+      <div class="contact-actions">
+        <a href="mailto:frank.lopez@example.com" class="btn-primary">Email Me</a>
+        <a href="#" class="btn-secondary">Download Resume</a>
+        <a href="#" class="btn-secondary">GitHub</a>
+        <a href="#" class="btn-secondary">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
