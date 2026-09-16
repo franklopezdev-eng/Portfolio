@@ -20,6 +20,22 @@ body {
   color: #0b1220;
 }
 
+.copy-toast {
+  margin-top: 14px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #7dd3fc;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.copy-toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 a {
   color: #38bdf8;
   text-decoration: none;
